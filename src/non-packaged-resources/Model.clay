@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clay-model clay-version="1.4.2">
+<database-model alias="" author="" begin-script="CREATE SCHEMA schemaname&#10;  AUTHORIZATION test;&#10;CREATE SEQUENCE schemaname.seqnum&#10;  INCREMENT 1&#10;  MINVALUE 1&#10;  MAXVALUE 9223372036854775807&#10;  START 31&#10;  CACHE 1;" end-script="" name="model" remarks="" sql-dialect-id="jp.azzurri.clay.dialect.Postgre_7_3_Dialect" uid="34dcf4d9:12c7933ea8c:-7fe2" version="1.0">
+<database-model-description/>
+<schema-list>
+<schema alias="" name="schemaname" remarks="" uid="34dcf4d9:12c7933ea8c:-7fdf">
+<schema-description/>
+<domain-list/>
+<table-list>
+<table alias="" name="person" remarks="" uid="34dcf4d9:12c7933ea8c:-7fe1">
+<table-description/>
+<table-figure-bounds height="293" width="267" x="37" y="210"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="person_id" remarks="" uid="34dcf4d9:12c7933ea8c:-7fdc">
+<column-description/>
+<data-type jdbc-type="4" name="INT" selected-variant-pattern="INT">
+<variant type-name-pattern="INT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="first_name" remarks="" uid="6c274eec:12d38e12745:-7ed6">
+<column-description/>
+<data-type jdbc-type="-1" literal-prefix="'" literal-suffix="'" name="TEXT" selected-variant-pattern="TEXT">
+<variant type-name-pattern="TEXT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="last_name" remarks="" uid="7301c3be:12d5119facc:-7ff1">
+<column-description/>
+<data-type jdbc-type="-1" literal-prefix="'" literal-suffix="'" name="TEXT" selected-variant-pattern="TEXT">
+<variant type-name-pattern="TEXT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="dob" remarks="" uid="7301c3be:12d5119facc:-7ff0">
+<column-description/>
+<data-type jdbc-type="91" name="DATE" selected-variant-pattern="DATE">
+<variant type-name-pattern="DATE"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="PK_PERSON" remarks="" uid="34dcf4d9:12c7933ea8c:-7fe0">
+<primary-key-description/>
+<primary-key-column name="person_id"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list/>
+</table>
+<table alias="" name="studio" remarks="" uid="34dcf4d9:12c7933ea8c:-7fd9">
+<table-description/>
+<table-figure-bounds height="94" width="199" x="908" y="266"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="studio_id" remarks="" uid="34dcf4d9:12c7933ea8c:-7fd5">
+<column-description/>
+<data-type jdbc-type="4" name="INT" selected-variant-pattern="INT">
+<variant type-name-pattern="INT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="name" remarks="" uid="faf009c:12d2e6e17b7:-7ff8">
+<column-description/>
+<data-type jdbc-type="-1" literal-prefix="'" literal-suffix="'" name="TEXT" selected-variant-pattern="TEXT">
+<variant type-name-pattern="TEXT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="website" remarks="" uid="7301c3be:12d5119facc:-7ea0">
+<column-description/>
+<data-type jdbc-type="-1" literal-prefix="'" literal-suffix="'" name="TEXT" selected-variant-pattern="TEXT">
+<variant type-name-pattern="TEXT"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="PK_STUDIO" remarks="" uid="34dcf4d9:12c7933ea8c:-7fd8">
+<primary-key-description/>
+<primary-key-column name="studio_id"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list/>
+</table>
+<table alias="" name="movie" remarks="" uid="6c274eec:12d38e12745:-7ffe">
+<table-description/>
+<table-figure-bounds height="144" width="165" x="588" y="317"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="movie_id" remarks="" uid="7301c3be:12d5119facc:-7e9d">
+<column-description/>
+<data-type jdbc-type="4" name="INT" selected-variant-pattern="INT">
+<variant type-name-pattern="INT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="title" remarks="" uid="6c274eec:12d38e12745:-7ffa">
+<column-description/>
+<data-type jdbc-type="-1" literal-prefix="'" literal-suffix="'" name="TEXT" selected-variant-pattern="TEXT">
+<variant type-name-pattern="TEXT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="year" remarks="" uid="6c274eec:12d38e12745:-7ff9">
+<column-description/>
+<data-type jdbc-type="4" name="INT" selected-variant-pattern="INT">
+<variant type-name-pattern="INT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="description" remarks="" uid="6c274eec:12d38e12745:-7ff8">
+<column-description/>
+<data-type jdbc-type="-1" literal-prefix="'" literal-suffix="'" name="TEXT" selected-variant-pattern="TEXT">
+<variant type-name-pattern="TEXT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="studio_id" remarks="" uid="7301c3be:12d5119facc:-7e6e">
+<column-description/>
+<data-type jdbc-type="4" name="INT" selected-variant-pattern="INT">
+<variant type-name-pattern="INT"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="PK_MOVIE" remarks="" uid="6c274eec:12d38e12745:-7ffd">
+<primary-key-description/>
+<primary-key-column name="movie_id"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list>
+<foreign-key alias="" name="FK_movie_1" on-delete="" on-update="" referenced-key="PK_STUDIO" referenced-table="studio" referenced-table-schema="schemaname" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="7301c3be:12d5119facc:-7e6f">
+<foreign-key-description/>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="studio_id" referenced-key-column-name="studio_id"/>
+</foreign-key>
+</foreign-key-list>
+<index-list/>
+</table>
+<table alias="" name="actors" remarks="" uid="7301c3be:12d5119facc:-7e44">
+<table-description/>
+<table-figure-bounds height="70" width="99" x="394" y="38"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="person_id" remarks="" uid="7301c3be:12d5119facc:-7e1c">
+<column-description/>
+<data-type jdbc-type="4" name="INT" selected-variant-pattern="INT">
+<variant type-name-pattern="INT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="movie_id" remarks="" uid="7301c3be:12d5119facc:-7df3">
+<column-description/>
+<data-type jdbc-type="4" name="INT" selected-variant-pattern="INT">
+<variant type-name-pattern="INT"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="PK_ACTORS" remarks="" uid="7301c3be:12d5119facc:-7e43">
+<primary-key-description/>
+<primary-key-column name="person_id"/>
+<primary-key-column name="movie_id"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list>
+<foreign-key alias="" name="FK_actors_1" on-delete="" on-update="" referenced-key="PK_PERSON" referenced-table="person" referenced-table-schema="schemaname" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="7301c3be:12d5119facc:-7e1d">
+<foreign-key-description/>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="person_id" referenced-key-column-name="person_id"/>
+</foreign-key>
+<foreign-key alias="" name="FK_actors_2" on-delete="" on-update="" referenced-key="PK_MOVIE" referenced-table="movie" referenced-table-schema="schemaname" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="7301c3be:12d5119facc:-7df4">
+<foreign-key-description/>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="movie_id" referenced-key-column-name="movie_id"/>
+</foreign-key>
+</foreign-key-list>
+<index-list/>
+</table>
+<table alias="" name="showing" remarks="" uid="7301c3be:12d5119facc:-7dad">
+<table-description/>
+<table-figure-bounds height="139" width="325" x="498" y="610"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="theater" remarks="" uid="7301c3be:12d5119facc:-7da9">
+<column-description/>
+<data-type jdbc-type="-1" literal-prefix="'" literal-suffix="'" name="TEXT" selected-variant-pattern="TEXT">
+<variant type-name-pattern="TEXT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="day" remarks="" uid="7301c3be:12d5119facc:-7da8">
+<column-description/>
+<data-type jdbc-type="-1" literal-prefix="'" literal-suffix="'" name="TEXT" selected-variant-pattern="TEXT">
+<variant type-name-pattern="TEXT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="movie_id" remarks="" uid="7301c3be:12d5119facc:-7d49">
+<column-description/>
+<data-type jdbc-type="4" name="INT" selected-variant-pattern="INT">
+<variant type-name-pattern="INT"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="PK_SHOWING" remarks="" uid="7301c3be:12d5119facc:-7dac">
+<primary-key-description/>
+<primary-key-column name="theater"/>
+<primary-key-column name="day"/>
+<primary-key-column name="movie_id"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list>
+<foreign-key alias="" name="FK_showing_1" on-delete="" on-update="" referenced-key="PK_MOVIE" referenced-table="movie" referenced-table-schema="schemaname" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="7301c3be:12d5119facc:-7d4a">
+<foreign-key-description/>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="movie_id" referenced-key-column-name="movie_id"/>
+</foreign-key>
+</foreign-key-list>
+<index-list/>
+</table>
+<table alias="" name="review" remarks="" uid="2014accd:1301d5bba1a:-7f39">
+<table-description/>
+<table-figure-bounds height="207" width="209" x="159" y="584"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="person_id" remarks="" uid="2014accd:1301d5bba1a:-7f0e">
+<column-description/>
+<data-type jdbc-type="4" name="INT" selected-variant-pattern="INT">
+<variant type-name-pattern="INT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="movie_id" remarks="" uid="2014accd:1301d5bba1a:-7e13">
+<column-description/>
+<data-type jdbc-type="4" name="INT" selected-variant-pattern="INT">
+<variant type-name-pattern="INT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="review" remarks="" uid="2014accd:1301d5bba1a:-7eca">
+<column-description/>
+<data-type jdbc-type="-1" literal-prefix="'" literal-suffix="'" name="TEXT" selected-variant-pattern="TEXT">
+<variant type-name-pattern="TEXT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="rating" remarks="" uid="2014accd:1301d5bba1a:-7ec9">
+<column-description/>
+<data-type jdbc-type="4" name="INT" selected-variant-pattern="INT">
+<variant type-name-pattern="INT"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="PK_REVIEW" remarks="" uid="2014accd:1301d5bba1a:-7f38">
+<primary-key-description/>
+<primary-key-column name="person_id"/>
+<primary-key-column name="movie_id"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list>
+<foreign-key alias="" name="FK_TABLE_6_1" on-delete="" on-update="" referenced-key="PK_PERSON" referenced-table="person" referenced-table-schema="schemaname" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="2014accd:1301d5bba1a:-7f0f">
+<foreign-key-description/>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="person_id" referenced-key-column-name="person_id"/>
+</foreign-key>
+<foreign-key alias="" name="FK_review_2" on-delete="" on-update="" referenced-key="PK_MOVIE" referenced-table="movie" referenced-table-schema="schemaname" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="2014accd:1301d5bba1a:-7e14">
+<foreign-key-description/>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="movie_id" referenced-key-column-name="movie_id"/>
+</foreign-key>
+</foreign-key-list>
+<index-list/>
+</table>
+</table-list>
+</schema>
+</schema-list>
+</database-model>
+</clay-model>
